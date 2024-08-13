@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class TodayProgram {
+        constructor(name, will) {
+          console.log("this will be called 2 times");
+          this.will = will;
+          this.name = name;
+        }
+        gogym() {
+          alert(this.name + " You are cool" + this.will);
+        }
+        dontGoGym() {
+          alert(this.name + " Stop being lazy" + this.will);
+        }
+      }
+      let Saroj = new TodayProgram("Saroj", " willing");
+      let Bishal = new TodayProgram("Bishal", " be strong");
+      Bishal.dontGoGym();
+      Saroj.gogym();
+    </script>
+  </body>
+</html>
