@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Car {
+        run() {
+          console.log("200mph");
+        }
+        color() {
+          console.log("Black");
+        }
+      }
+      class Volkswagen extends Car {
+        color() {
+          console.log("White");
+        }
+      }
+      let car1 = new Volkswagen();
+      let car2 = new Car();
+      car1.color();
+      car2.color();
+      car1.run();
+    </script>
+  </body>
+</html>
